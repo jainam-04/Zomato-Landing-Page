@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero__section {
+  background: url(./images/heroSectionBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  padding: 16px 48px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__menu_container {
+  display: flex;
+  gap: 18px;
+}
+
+.navbar__menu_container .user_icon {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar__menu_container .user_icon {
+    display: flex;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .hero__section{
+      min-height: 60vh;
+  }
+}
